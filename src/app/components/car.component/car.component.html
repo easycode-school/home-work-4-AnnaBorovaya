@@ -1,0 +1,16 @@
+<p> Name: {{ name }}</p>
+<p> ValueFuelTank: {{ valueFuelTank }}</p>
+<p> Mileage: {{ mileage }}</p>
+<p> CurrentFuel: {{ currentFuel }}</p>
+
+<ul>
+    <li *ngFor="let item of specifications; let i = index">
+        {{ i+1 }}
+        {{ item }}
+    </li>
+</ul>
+
+<button (click)='onClickHandlerDrive($event)' *ngIf = "!visibleButton" class="drive"> Ехать </button>
+<button (click)='onClickHandlerFuel($event)' *ngIf = "visibleButton" class="fuel"> Заправить </button>
+
+
