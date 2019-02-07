@@ -1,0 +1,17 @@
+button {
+    padding: 10px 30px;
+    display: block;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    color:  white;
+    background-color: cadetblue;
+    border: none;
+    margin-bottom: 20px;
+}
+
+button.fuel{
+    background-color: rosybrown;
+}
+
+ul{
+    padding-left: 20px;
+}
